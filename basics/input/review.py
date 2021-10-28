@@ -27,6 +27,7 @@ if answer == 2:
   print("\nEnter the radius of the circle (in cm)")
   radius = float(input())
 
-  area = (radius ** 2) * 3.141592653589793 
+  area = ((radius ** 2) * 3.141592653589793)
 
-  print("\nThe value of the area of ​​the circle is {}".format(area), "cm2")
+# The ":.2f" formatting string can only be used inside of print() 
+  print("\nThe value of the area of ​​the circle is {:.2f}".format(area), "cm2")
