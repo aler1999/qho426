@@ -1,8 +1,8 @@
 
-first_n = input("Please enter the first number.")
-second_n = input("Please enter the second number.")
+first_n = input("\nPlease enter the first number.\n")
+second_n = input("Please enter the second number.\n")
 
 if first_n > second_n :
-  print("The second number is the smallest")
+  print("\nThe second number is the smallest")
 else :
-  print ("The first number is the smallest")
+  print ("\nThe first number is the smallest")
