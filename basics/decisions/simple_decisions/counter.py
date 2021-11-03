@@ -8,10 +8,10 @@ while i < 3 :
   n = int(input("\nPlease enter a whole number.\n"))
 
   if n % 2 == 0 :
-   odd_numbers += 1
-  else :
     even_numbers += 1
+  else :
+    odd_numbers += 1
 
   i += 1
 
-print ("There were {} even and {} odd numbers.".format(odd_numbers, even_numbers))
+print ("There were {} even and {} odd numbers.".format(even_numbers, odd_numbers))
