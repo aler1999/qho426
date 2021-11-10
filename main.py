@@ -1,25 +1,34 @@
-import random as rnd
+import basics.output.simple_message as simple_message
+import basics.output.multiline_message as multiline_message
+import basics.output.escape_characters as escape_characters
+import basics.output.ascii_art as ascii_art
 
-mini = int(input("Please enter the minimum value:\n"))
-maxi = int(input("\nPlease enter the maximum value:\n"))
+def run_block_a():
+    print("\nWhich program in 'Block A: Basics' do you wish to run?")
+    response = input()
+    if (response == "simple_message"):
+        simple_message.run()
+    elif (response == "multiline_message"):
+        multiline_message.run()
+    elif (response == "escape_characters"):
+        escape_characters.run()
+    elif (response == "ascii_art"):
+        ascii_art.run()
 
-if mini < maxi:
-  n_guessed = 999999999999999999999999999999
-  n_guess = rnd.randrange(mini, maxi)
+def run():
+    is_running = True
 
-  print("\nI am thinking of a number between {} and {}. Can you guess what it is?".format(mini, maxi))
+    while(is_running):
+        print("\nWhat would you like to do?")
+        print("[a] Run 'Block A: Basics' programs")
+        print("[q] Quit")
+        response = input()
 
-  while n_guess != n_guessed:
-    n_guessed = int(input())
+        if (response == "a"):
+            run_block_a()
+        elif (response == "q"):
+            break
+        else:
+            print("Invalid option! Please try again.")
 
-    if n_guess > n_guessed:
-      print("\nYour guess is too low. \nTry again:")
-
-    if n_guess < n_guessed:
-      print("\nYour guess is too high. \nTry again:")
-    
-    if n_guess == n_guessed:
-      print("\nCongratulations! You guessed my number!")
-
-else:
-  print("The minimum number can't be higher than the maximum.")
+run()

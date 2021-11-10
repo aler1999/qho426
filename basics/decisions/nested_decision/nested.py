@@ -1,4 +1,3 @@
-
 cover_type = input("\nWhat type of cover does the book have?\n")
 
 while cover_type != "soft" and cover_type != "Soft" and cover_type != "hard" and cover_type != "Hard" :

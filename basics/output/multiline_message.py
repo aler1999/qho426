@@ -1,12 +1,15 @@
-print("System Failure Imminent!")
-print("Reboot has been initiated...")
+def run():
+  print("System Failure Imminent!")
+  print("Reboot has been initiated...")
 
-print()
+  print()
 
-print ("...rebooting sensory systems")
-print ("...rebooting output motors")
-print ("...rebooting hover engine")
+  print ("...rebooting sensory systems")
+  print ("...rebooting output motors")
+  print ("...rebooting hover engine")
 
-print()
+  print()
 
-print ("System Online")
+  print ("System Online")
+
+run()
