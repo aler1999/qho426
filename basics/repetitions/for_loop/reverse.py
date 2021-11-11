@@ -1,4 +1,5 @@
 phrase = input("What phrase do you see? ")
+
 p_reversed = ""
 
 print("\nReversing...\n")
