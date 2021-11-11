@@ -1,5 +1,4 @@
 def movements():
-  path = []
   path = ["Move Forward", 10, "Move Backward", 5, "Move Left", 3, "Move Right", 1]
 
   return path
@@ -8,7 +7,6 @@ def run():
 
   print("\nMoving...\n")
 
-  path = []
   path = movements()
 
   print(f"{path[0]} for {path[1]} steps")
