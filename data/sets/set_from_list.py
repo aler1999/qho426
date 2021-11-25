@@ -12,6 +12,7 @@ def run():
   observations = observed()
 
   observations_set = set()
+  
   for observation in observations:
     data = (observation, observations.count(observation))
     observations_set.add(data)
